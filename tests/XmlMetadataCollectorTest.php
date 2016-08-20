@@ -5,19 +5,19 @@
  */
 namespace samsonframework\containerxml\tests;
 
-use samsonframework\container\collection\attribute\ClassName;
-use samsonframework\container\collection\attribute\Name;
-use samsonframework\container\collection\attribute\Scope;
-use samsonframework\container\collection\attribute\Service;
-use samsonframework\container\collection\CollectionClassResolver;
-use samsonframework\container\collection\CollectionMethodResolver;
-use samsonframework\container\collection\CollectionParameterResolver;
-use samsonframework\container\collection\CollectionPropertyResolver;
+use samsonframework\containercollection\attribute\ClassName;
+use samsonframework\containercollection\attribute\Name;
+use samsonframework\containercollection\attribute\Scope;
+use samsonframework\containercollection\attribute\Service;
+use samsonframework\containercollection\CollectionClassResolver;
+use samsonframework\containercollection\CollectionMethodResolver;
+use samsonframework\containercollection\CollectionParameterResolver;
+use samsonframework\containercollection\CollectionPropertyResolver;
 use samsonframework\container\metadata\ClassMetadata;
-use samsonframework\container\resolver\XmlResolver;
+use samsonframework\containerxml\XmlResolver;
 use samsonframework\containerxml\tests\classes\FastDriver;
 use samsonframework\containerxml\tests\classes\Road;
-use samsonframework\container\XmlMetadataCollector;
+use samsonframework\containerxml\XmlMetadataCollector;
 
 class XmlMetadataCollectorTest extends TestCase
 {

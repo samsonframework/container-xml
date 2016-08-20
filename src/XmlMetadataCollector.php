@@ -5,7 +5,8 @@
  */
 namespace samsonframework\containerxml;
 
-use samsonframework\container\collection\CollectionClassResolver;
+use samsonframework\container\AbstractMetadataCollector;
+use samsonframework\containercollection\CollectionClassResolver;
 
 /**
  * XML class metadata collector.

@@ -5,10 +5,11 @@
  */
 namespace samsonframework\containerxml;
 
-use samsonframework\container\collection\CollectionClassResolver;
-use samsonframework\container\collection\CollectionMethodResolver;
-use samsonframework\container\collection\CollectionPropertyResolver;
+use samsonframework\containercollection\CollectionClassResolver;
+use samsonframework\containercollection\CollectionMethodResolver;
+use samsonframework\containercollection\CollectionPropertyResolver;
 use samsonframework\container\metadata\ClassMetadata;
+use samsonframework\container\resolver\ResolverInterface;
 
 /**
  * XML dependency injection container configuration.
