@@ -3,7 +3,7 @@
  * Created by Vitaly Iegorov <egorov@samsonos.com>.
  * on 06.08.16 at 11:11
  */
-namespace samsonframework\containerxml\tests\classes;samsonframework/container-xml
+namespace samsonframework\containerxml\tests\classes;
 
 class FastDriver implements DriverInterface
 {

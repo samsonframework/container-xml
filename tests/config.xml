@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependencies>
-    <instance class="samsonframework\container\\tests\classes\FastDriver" name="MyDriver">
+    <instance class="samsonframework\containerxml\tests\classes\FastDriver" name="MyDriver">
         <methods>
             <__construct>
                 <arguments>
-                    <leg class="samsonframework\container\\tests\classes\Leg"></leg>
+                    <leg class="samsonframework\containerxml\tests\classes\Leg"></leg>
                 </arguments>
             </__construct>
             <stopCar>
                 <arguments>
-                    <leg class="samsonframework\container\\tests\classes\Leg"></leg>
+                    <leg class="samsonframework\containerxml\tests\classes\Leg"></leg>
                 </arguments>
             </stopCar>
         </methods>
     </instance>
-    <instance class="samsonframework\container\\tests\classes\Car" scope="myTestScope">
+    <instance class="samsonframework\containerxml\tests\classes\Car" scope="myTestScope">
         <properties>
-            <driver class="samsonframework\container\\tests\classes\FastDriver"></driver>
+            <driver class="samsonframework\containerxml\tests\classes\FastDriver"></driver>
         </properties>
     </instance>
-    <instance class="samsonframework\container\\tests\classes\CarService" service="carservice">
+    <instance class="samsonframework\containerxml\tests\classes\CarService" service="carservice">
         <methods>
             <__construct>
                 <arguments>
-                    <car class="samsonframework\container\\tests\classes\Car"></car>
-                    <driver class="samsonframework\container\\tests\classes\FastDriver"></driver>
+                    <car class="samsonframework\containerxml\tests\classes\Car"></car>
+                    <driver class="samsonframework\containerxml\tests\classes\FastDriver"></driver>
                 </arguments>
             </__construct>
         </methods>
     </instance>
-    <instance class="samsonframework\container\\tests\classes\Road">
+    <instance class="samsonframework\containerxml\tests\classes\Road">
         <methods>
             <__construct>
                 <arguments>

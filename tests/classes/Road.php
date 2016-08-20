@@ -7,6 +7,16 @@ namespace samsonframework\containerxml\tests\classes;
 
 class Road
 {
-    /** @var Car */
-    protected $car;
+    /** @var CarService */
+    protected $carService;
+
+    /**
+     * Road constructor.
+     *
+     * @param CarService $carService
+     */
+    public function __construct(CarService $carService)
+    {
+        $this->carService = $carService;
+    }
 }

@@ -3,7 +3,7 @@
  * Created by Vitaly Iegorov <egorov@samsonos.com>.
  * on 20.08.16 at 12:50
  */
-namespace samsonframework\container\tests;
+namespace samsonframework\containerxml\tests;
 
 use samsonframework\container\collection\attribute\ClassName;
 use samsonframework\container\collection\attribute\Name;
@@ -15,8 +15,8 @@ use samsonframework\container\collection\CollectionParameterResolver;
 use samsonframework\container\collection\CollectionPropertyResolver;
 use samsonframework\container\metadata\ClassMetadata;
 use samsonframework\container\resolver\XmlResolver;
-use samsonframework\container\tests\classes\FastDriver;
-use samsonframework\container\tests\classes\Road;
+use samsonframework\containerxml\tests\classes\FastDriver;
+use samsonframework\containerxml\tests\classes\Road;
 use samsonframework\container\XmlMetadataCollector;
 
 class XmlMetadataCollectorTest extends TestCase
@@ -55,11 +55,11 @@ class XmlMetadataCollectorTest extends TestCase
         $xmlConfig = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <dependencies>
-<instance class="samsonframework\container\\tests\classes\FastDriver" name="MyDriver">
+<instance class="samsonframework\containerxml\\tests\classes\FastDriver" name="MyDriver">
     <methods>
         <__construct>
             <arguments>
-                <leg class="samsonframework\container\\tests\classes\Leg"></leg>
+                <leg class="samsonframework\containerxml\\tests\classes\Leg"></leg>
             </arguments>
         </__construct>
     </methods>
@@ -69,11 +69,11 @@ XML;
         $xmlConfig2 = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <dependencies>
-<instance class="samsonframework\container\\tests\classes\FastDriver" name="MyDriver">
+<instance class="samsonframework\containerxml\\tests\classes\FastDriver" name="MyDriver">
     <methods>
         <stopCar>
             <arguments>
-                <leg class="samsonframework\container\\tests\classes\Leg"></leg>
+                <leg class="samsonframework\containerxml\\tests\classes\Leg"></leg>
             </arguments>
         </stopCar>
     </methods>
